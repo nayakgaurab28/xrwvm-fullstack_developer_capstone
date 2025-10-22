@@ -1,0 +1,86 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Content -->
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 30px; text-align: center;">
+    <h1>Contact Us</h1>
+    <p style="font-size: 18px; margin-top: 10px;">
+      We’d love to hear from you! Whether you have a question about our cars, services, or anything else, 
+      our team is ready to answer all your inquiries.
+    </p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; margin-top: 40px;">
+
+      <!-- Contact Info -->
+      <div style="width: 40%; min-width: 280px; text-align: left;">
+        <h3>📍 Our Office</h3>
+        <p>Best Cars Dealership<br>
+        123 Auto Drive, Toronto, ON M5B 2H1<br>
+        Canada</p>
+
+        <h3>📞 Call Us</h3>
+        <p>+1 (416) 555-9821</p>
+
+        <h3>✉️ Email</h3>
+        <p><a href="mailto:support@bestcars.com">support@bestcars.com</a></p>
+      </div>
+
+      <!-- Contact Form -->
+      <div style="width: 45%; min-width: 300px; text-align: left;">
+        <h3>Send Us a Message</h3>
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Write your message here"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="background-color: darkturquoise; border: none;">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="text-align:center; margin-top: 50px; padding: 10px; background-color: #f8f9fa;">
+    <p>&copy; 2025 Best Cars Dealership. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
