@@ -3,7 +3,8 @@ from .models import CarMake, CarModel
 
 
 # Inline class for CarModel
-class CarModelInline(admin.StackedInline):  # You can also use admin.TabularInline for compact view
+class CarModelInline(
+        admin.StackedInline):  # You can also use admin.TabularInline for compact view
     model = CarModel
     extra = 1  # How many blank CarModel forms to display
 
@@ -25,4 +26,3 @@ class CarMakeAdmin(admin.ModelAdmin):
 # Register models
 admin.site.register(CarMake, CarMakeAdmin)
 admin.site.register(CarModel, CarModelAdmin)
-

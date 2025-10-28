@@ -15,8 +15,10 @@ class CarMake(models.Model):
     def __str__(self):
         return self.name
 
+
 class CarModel(models.Model):
-    car_make = models.ForeignKey(CarMake, on_delete=models.CASCADE)  # Many-to-One
+    car_make = models.ForeignKey(
+        CarMake, on_delete=models.CASCADE)  # Many-to-One
     name = models.CharField(max_length=100)
     CAR_TYPES = [
         ('SEDAN', 'Sedan'),
@@ -36,4 +38,4 @@ class CarModel(models.Model):
     color = models.CharField(max_length=50, default="Black")
 
     def __str__(self):
-        return f"{self.car_make.name} {self.name}" 
+        return f"{self.car_make.name} {self.name}"
