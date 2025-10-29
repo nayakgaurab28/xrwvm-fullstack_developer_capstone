@@ -49,7 +49,8 @@ app.get('/fetchReviews', async (req, res) => {
 // Express route to fetch reviews by a particular dealer
 app.get('/fetchReviews/dealer/:id', async (req, res) => {
   try {
-    const documents = await Reviews.find({dealership: req.params.id});
+    const dealerId = parseInt(req.params.id); // convert to number
+    const documents = await Reviews.find({ dealership: dealerId });
     res.json(documents);
   } catch (error) {
     res.status(500).json({ error: 'Error fetching documents' });
